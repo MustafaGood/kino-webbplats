@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Filmlista</title>
+</head>
+<body>
+  <h1>Filmlista</h1>
+  <ul>
+    <% movies.forEach(movie => { %>
+      <li><a href="/movies/<%= movie.id %>"><%= movie.attributes.title %></a></li>
+    <% }) %>
+  </ul>
+</body>
+</html>
